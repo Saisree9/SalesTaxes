@@ -34,7 +34,7 @@ public class Shop {
             cost = new Double(inputItems.nextLine());
             if (itemInformation.contains("imported")){
                 totalCost=cost+cost*0.1+cost*0.05;
-                System.out.println(quantityOfItem1+" " +" "+ item1+" " + " "+ cost);
+                System.out.println(quantityOfItem1+" " +" "+ item1+" " + " "+ totalCost);
             }
             else if (Objects.equals(item1, "book"))
                 if (quantityOfItem1==1)
@@ -42,7 +42,7 @@ public class Shop {
             else if (Objects.equals(item1,"music") || Objects.equals(item1,"chocolate"))
                     if (quantityOfItem1==1) {
                         totalCost=cost+cost*0.1;
-                        System.out.println(quantityOfItem1+" " +" "+ item1+" " + " "+ cost);                    }
+                        System.out.println(quantityOfItem1+" " +" "+ item1+" " + " "+ totalCost);                    }
             i++;
 
         }
